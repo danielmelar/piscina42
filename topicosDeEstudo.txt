@@ -1,0 +1,5 @@
+pela norma(pag 5), estudar:
+    - O porquê de funções precisarem ser curtas e possuir apenas uma tarefa;
+    - O porquê de nomes de variáveis precisarem ser compreensíveis;
+    - O porquê de linhas não poderem extrapolar o limite de 80 colunas;
+    - etc, etc, etc.... (em resumo, o porquê da norma ser como é)
