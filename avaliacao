@@ -1,6 +1,0 @@
-ex00: errado: enviado um arquivo a mais(z.save)
-ex01: errado: enviou diretorio com .tar dentro
-ex02: correto obs: numero de link por arquivos difere do print exemplo
-ex03: correto
-ex04: arquivo 'midLS' vazio
-ex05: arquivo vazio e com nome de 'ex05'
