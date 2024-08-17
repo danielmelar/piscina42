@@ -19,17 +19,18 @@ void rush(int x, int y)
 		int mid_y = 0;	
 		while(mid_y < y)
 		{
-
-			if (mid_x == 0 && mid_y == 0)
+			if ((mid_x == 0 && mid_y == 0) || (mid_x == 0 && mid_y == y - 1))
 				ft_putchar('x');
-			else if (mid_x == 0 && mid_y == y - 1)
+			else if ((mid_x == x - 1 && mid_y == 0) || (mid_x == x - 1 && mid_y == y - 1))
 				ft_putchar('x');
-			else if (mid_x == x - 1 && mid_y == 0)
+			else if((mid_x == 0 && mid_y < y))
 				ft_putchar('x');
-			else if (mid_x == x - 1&& mid_y == y - 1)
+			else if((mid_x == x && mid_y < y))
+				ft_putchar('x');
+			else if((mid_x < x && mid_y == 0))
 				ft_putchar('x');
 			else
-				ft_putchar('x');
+				ft_putchar(' ');
 			mid_y++;
 		}
 		write(1, "\n", 1);
