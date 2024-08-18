@@ -1,1 +1,0 @@
-O programa deverá compilar com as flags: -Wall -Wextra -Werror, e utiliza cc

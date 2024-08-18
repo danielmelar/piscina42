@@ -6,15 +6,7 @@ void rush(int x, int y);
 
 int main()
 {
-	rush(5, 3);
-	printf("\n");
-	rush(5, 1);
-	printf("\n");
-	rush(1, 1);
-	printf("\n");
-	rush(1, 5);
-	printf("\n");
-	rush(4, 4);
+	rush(5, 5);
 	return 0;
 }
 
