@@ -44,7 +44,7 @@ void	rush04(int x, int y)
 		mid_x = 0;
 		while (mid_x < x)
 		{
-			check_position(x, y, mid_y, mid_x);
+			check_position(x, y, mid_x, mid_y);
 			mid_x++;
 		}
 		ft_putchar('\n');

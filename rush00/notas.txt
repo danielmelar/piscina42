@@ -1,3 +1,6 @@
 conteudos para estudar
 compilador cc e suas individualidades
 pq apenas prototipar a funcao que queremos importar funciona?
+-Wall -Wextra -Werror
+comando para rodar:
+cc ft_putchar.c main.c rush04.c -Wall -Wextra -Werror
