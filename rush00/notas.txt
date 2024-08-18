@@ -1,0 +1,3 @@
+conteudos para estudar
+compilador cc e suas individualidades
+pq apenas prototipar a funcao que queremos importar funciona?
