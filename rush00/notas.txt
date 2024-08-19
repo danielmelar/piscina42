@@ -4,3 +4,10 @@ pq apenas prototipar a funcao que queremos importar funciona?
 -Wall -Wextra -Werror
 comando para rodar:
 cc ft_putchar.c main.c rush04.c -Wall -Wextra -Werror
+
+flags:
+	-Wall: habilita avisos  de compilacao.
+	-Wextra: habilita avisos  extras que não são pegos pelo -Wall.
+	-Werror: trata todos os avisos como erros.
+
+

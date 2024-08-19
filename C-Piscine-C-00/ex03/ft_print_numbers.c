@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabetTest.c                            :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dyuri-de <student.42sp.org.br>             +#+  +:+       +#+        */
+/*   By: dyuri-de <@student.42sp.org.sp>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/15 18:21:11 by dyuri-de          #+#    #+#             */
-/*   Updated: 2024/08/15 19:49:59 by dyuri-de         ###   ########.fr       */
+/*   Created: 2024/08/19 17:27:49 by dyuri-de          #+#    #+#             */
+/*   Updated: 2024/08/19 18:24:00 by dyuri-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
-void	ft_print_alphabet(void);
 
-void	ft_print_alphabet(void)
+void	ft_print_numbers(void);
+
+void	ft_print_numbers(void)
 {
-	int	ascii_letter;
+	char	count;
 
-	ascii_letter = 97;
-	while (ascii_letter <= 122)
+	count = 48;
+	while (count < 58)
 	{
-		write(1, &ascii_letter, 3);
-		ascii_letter++;
+		write(1, &count, 1);
+		count++;
 	}
-}
-
-int main()
-{
-	ft_print_alphabet();
 }

@@ -6,9 +6,11 @@
 /*   By: dyuri-de <student.42sp.org.br>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/15 16:22:30 by dyuri-de          #+#    #+#             */
-/*   Updated: 2024/08/15 18:08:33 by dyuri-de         ###   ########.fr       */
+/*   Updated: 2024/08/19 17:52:47 by dyuri-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <unistd.h>
+
 void	ft_putchar(char c);
 
 void	ft_putchar(char c)

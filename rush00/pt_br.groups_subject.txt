@@ -1,0 +1,15 @@
+Pegue a primeira letra do login do líder do seu time e a transforme em um número seguindo esta regra:
+A = 1
+B = 2
+C = 3
+D = 4
+...
+
+o seu tema será o número que você obteve módulo 5, então:
+1 % 5 = 1 (o seu tema é 1)
+2 % 5 = 2 (o seu tema é 2)
+3 % 5 = 3 (o seu tema é 3)
+4 % 5 = 4 (o seu tema é 4)
+5 % 5 = 0 (o seu tema é 0)
+6 % 5 = 1 (o seu tema é 1)
+...

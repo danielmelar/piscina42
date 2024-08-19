@@ -1,31 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabetTest.c                    :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dyuri-de <student.42sp.org.br>             +#+  +:+       +#+        */
+/*   By: dyuri-de <@student.42sp.org.br>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/15 18:21:11 by dyuri-de          #+#    #+#             */
-/*   Updated: 2024/08/15 20:07:55 by dyuri-de         ###   ########.fr       */
+/*   Created: 2024/08/19 18:26:17 by dyuri-de          #+#    #+#             */
+/*   Updated: 2024/08/19 18:26:32 by dyuri-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
-void	ft_print_alphabet(void);
+void	ft_is_negative(int n);
 
-void	ft_print_alphabet(void)
+void	ft_is_negative(int n)
 {
-	int	ascii_letter;
-
-	ascii_letter = 122;
-	while (ascii_letter >= 97)
-	{
-		write(1, &ascii_letter, 3);
-		ascii_letter--;
-	}
-}
-
-int main()
-{
-	ft_print_alphabet();
+	if (n < 0)
+		write(1, "N", 1);
+	else
+		write(1, "P", 1);
 }
