@@ -17,10 +17,10 @@ void	ft_print_alphabet(void)
 {
 	int	ascii_letter;
 
-	ascii_letter = 97;
-	while (ascii_letter <= 122)
+	ascii_letter = 'a';
+	while (ascii_letter <= 'z')
 	{
-		write(1, &ascii_letter, 3);
+		write(1, &ascii_letter, 1);
 		ascii_letter++;
 	}
 }

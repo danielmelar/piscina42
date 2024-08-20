@@ -6,5 +6,5 @@
 
 int main()
 {
-	ft_print_numbers();
+	ft_print_reverse_alphabet();
 }

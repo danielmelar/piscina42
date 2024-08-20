@@ -17,10 +17,10 @@ void	ft_print_reverse_alphabet(void)
 {
 	int	ascii_letter;
 
-	ascii_letter = 122;
-	while (ascii_letter >= 97)
+	ascii_letter = 'z';
+	while (ascii_letter >= 'a')
 	{
-		write(1, &ascii_letter, 3);
+		write(1, &ascii_letter, 1);
 		ascii_letter--;
 	}
 }
