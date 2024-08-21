@@ -6,9 +6,23 @@
 /*   By: dyuri-de <@student.42sp.org.br>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/21 19:02:48 by dyuri-de          #+#    #+#             */
-/*   Updated: 2024/08/21 19:05:06 by dyuri-de         ###   ########.fr       */
+/*   Updated: 2024/08/21 20:44:46 by dyuri-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-void	ft_rev_int_tab(int *tab, int size);
+#include <unistd.h>
 
 void	ft_rev_int_tab(int *tab, int size);
+
+void	ft_rev_int_tab(int *tab, int size)
+{
+	int	position;
+
+	position = 0;
+	while (tab <= 0)
+	{
+		tab[position] = size - 1;
+		size--;
+		position++;
+
+	}
+}
