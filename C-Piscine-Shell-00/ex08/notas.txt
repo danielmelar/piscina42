@@ -1,0 +1,1 @@
+a diferença entre as flags, como -delete e o -exec é que o -exec executa comando unix após fazer a busca, ent posso delete diretórios os achando e depois usando o -rm -rf para apagar recursivamente.
