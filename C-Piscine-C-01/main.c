@@ -6,32 +6,35 @@
 #include "ex05/ft_putstr.c"
 #include "ex06/ft_strlen.c"
 #include "ex07/ft_rev_int_tab.c"
+#include "ex08/ft_sort_int_tab.c"
 
 #include <stdio.h>
 
 int main()
 {
-	int int_tab[3] = {1, 2, 3};
+	int int_tab[5] = {7, 5, 2, 9, 1};
 	
-	int	count;
+	int	index;
 
-	count = 0;
+	index = 0;
 
-	while (int_tab[count] != '\0')
+	while (index < 5)
 	{
-		printf("%d", int_tab[count]);
-		count++;
+		printf("%d", int_tab[index]);
+		index++;
 	}
 
-	ft_rev_int_tab(int_tab, 3);
+	ft_sort_int_tab(int_tab, 5);
+	
 	printf("\n");
-        count = 0;
+    
+	index = 0;
 
-        while (int_tab[count] != '\0')
-        {
-                printf("%d", int_tab[count]);
-                count++;
-        }
+	while (index < 5)
+	{
+			printf("%d", int_tab[index]);
+			index++;
+	}
 
 
 	printf("\n");
