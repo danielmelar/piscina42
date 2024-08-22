@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dyuri-de <@student.42sp.org.br>            +#+  +:+       +#+        */
+/*   By: dyuri-de <dyuri-de@student.42sp.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/22 08:18:08 by dyuri-de          #+#    #+#             */
-/*   Updated: 2024/08/22 09:02:31 by dyuri-de         ###   ########.fr       */
+/*   Created: 2024/08/22 14:16:35 by dyuri-de          #+#    #+#             */
+/*   Updated: 2024/08/22 14:16:36 by dyuri-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-char    *ft_strcpy(char *dest, char *src);
+#include <unistd.h>
 
-char    *ft_strcpy(char *dest, char *src)
+void    ft_putnbr(int nb);
+
+void    ft_putnbr(int nb)
 {
-    int index = 0;
+    
+    
+    write(1, &nb, 1);
 
-    while (src[index] != '\0')
-    {
-        dest[index] = src[index];
-        index++;  
-    }
+    int temp = nb % 10;
 
-    dest[index] = '\0';
-
-    return dest;
+    write(1, &nb, 1);
 }
