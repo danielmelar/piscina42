@@ -2,7 +2,11 @@
 
 //#include "ex02/ft_str_is_alpha.c"
 //#include "ex03/ft_str_is_numeric.c"
-#include "ex04/ft_str_is_lowercase.c"
+//#include "ex04/ft_str_is_lowercase.c"
+//#include "ex05/ft_str_is_uppercase.c"
+// #include "ex06/ft_str_is_printable.c"
+// #include "ex07/ft_strupcase.c"
+#include "ex08/ft_strlowcase.c"
 
 #include <stdio.h>
 #include <string.h>
@@ -35,15 +39,10 @@ int main()
     // printf("ex02================\n");
     // char *str = "42sp";
     // int is_alpha;
-    
-    // is_alpha = ft_str_is_alpha(str);
-    // printf("%d\n", is_alpha);
-
-    // char *str2 = "spSp!";
     // int is_alpha2;
     
     // is_alpha2 = ft_str_is_alpha(str2);
-    // printf("%d\n", is_alpha2);
+    // printf("%d\n", is_alpha2);ft_str_is_uppercase
 
 
     // char *str3 = "";
@@ -74,28 +73,89 @@ int main()
     // printf("ex03================\n");
     // printf("\n");
 
-    printf("ex04================\n");
-    char *str1 = "42sp";
-    int is_alpha1;
-    is_alpha1 = ft_str_is_lowercase(str1);
-    printf("%d\n", is_alpha1);
+    // printf("ex04================\n");
+    // char *str1 = "42sp";
+    // int is_alpha1;
+    // is_alpha1 = ft_str_is_lowercase(str1);
+    // printf("%d\n", is_alpha1);
 
-    char *str2 = "abcsp";
-    int is_alpha2;
-    is_alpha2 = ft_str_is_lowercase(str2);
-    printf("%d\n", is_alpha2);
+    // char *str2 = "abcsp";
+    // int is_alpha2;
+    // is_alpha2 = ft_str_is_lowercase(str2);
+    // printf("%d\n", is_alpha2);
 
-    char *str3 = "";
-    int is_alpha3;
-    is_alpha3 = ft_str_is_lowercase(str3);
-    printf("%d\n", is_alpha3);
-    printf("ex04================\n");
+    // char *str3 = "";ft_str_is_lowercase
+    // int is_alpha3;
+    // is_alpha3 = ft_str_is_lowercase(str3);
+    // printf("%d\n", is_alpha3);
+    // printf("ex04============#include "ex07/ft_strupcase.c"====\n");
+    // printf("\n");
+
+    // printf("ex05================\n");
+    // char *str1 = "42sp";
+    // int is_alpha1;
+    // is_alpha1 = ft_str_is_uppercase(str1);
+    // printf("%d\n", is_alpha1);
+
+    // char *str2 = "ABCSP";
+    // int is_alpha2;
+    // is_alpha2 = ft_str_is_uppercase(str2);
+    // printf("%d\n", is_alpha2);
+
+    // char *str3 = "";
+    // int is_alpha3;
+    // is_alpha3 = ft_str_is_uppercase(str3);
+    // printf("%d\n", is_alpha3);
+    // printf("ex05================\n");
+    // printf("\n");
+
+    
+    // printf("ex06================\n");
+    // char *str1 = "42sp";
+    // int is_alpha1;
+    // is_alpha1 = ft_str_is_printable(str1);
+    // printf("%d\n", is_alpha1);
+
+    // char *str2 = "ABCSP";
+    // int is_alpha2;
+    // is_alpha2 = ft_str_is_printable(str2);
+    // printf("%d\n", is_alpha2);
+
+    // char *str3 = "";
+    // int is_alpha3;
+    // is_alpha3 = ft_str_is_printable(str3);
+    // printf("%d\n", is_alpha3);
+    // printf("ex06================\n");
+    // printf("\n");
+
+    // printf("ex07================\n");
+    // char str1[] = "42sp LKS 0907 viagem ao centro da terra";
+    // printf("%s\n", str1);
+
+    // ft_strupcase(str1);
+    // printf("%s\n", str1);
+
+    // printf("ex07================\n");
+    // printf("\n");
+
+
+    printf("ex08================\n");
+    char str1[] = "42sp LKS 0907 VIAGEM AO CENtrO dA tERRA";
+    printf("%s\n", str1);
+
+    ft_strlowcase(str1);
+    printf("%s\n", str1);
+
+    printf("ex08================\n");
     printf("\n");
 
 
-    printf("ex03================\n");
-    printf("ex03================\n");
-    printf("\n");
+
+
+
+    // printf("ex03================\n");
+    // printf("ex03================\n");
+    // printf("\n");
 
     return 0;
 }

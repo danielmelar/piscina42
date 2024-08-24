@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dyuri-de <@student.42sp.org.br>            +#+  +:+       +#+        */
+/*   By: dyuri-de <dyuri-de@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/22 08:18:08 by dyuri-de          #+#    #+#             */
-/*   Updated: 2024/08/23 21:15:38 by dyuri-de         ###   ########.fr       */
+/*   Created: 2024/08/23 20:47:08 by dyuri-de          #+#    #+#             */
+/*   Updated: 2024/08/23 21:08:55 by dyuri-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-char	*ft_strcpy(char *dest, char *src);
+char	*ft_strupcase(char *str);
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strupcase(char *str)
 {
 	int	index;
 
 	index = 0;
-	while (src[index] != '\0')
+	while (str[index] != '\0')
 	{
-		dest[index] = src[index];
+		if (str[index] >= 97 && str[index] <= 122)
+		str[index] = str[index] - 32;
 		index++;
 	}
-	dest[index] = '\0';
-	return (dest);
+	str[index] = '\0';
+	return (str);
 }
