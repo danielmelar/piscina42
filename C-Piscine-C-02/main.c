@@ -1,12 +1,13 @@
-#include "ex00/ft_strcpy.c"
-
-//#include "ex02/ft_str_is_alpha.c"
-//#include "ex03/ft_str_is_numeric.c"
-//#include "ex04/ft_str_is_lowercase.c"
-//#include "ex05/ft_str_is_uppercase.c"
+// #include "ex00/ft_strcpy.c"
+// #include "ex01/ft_strncpy.c"
+// #include "ex02/ft_str_is_alpha.c"
+// #include "ex03/ft_str_is_numeric.c"
+// #include "ex04/ft_str_is_lowercase.c"
+// #include "ex05/ft_str_is_uppercase.c"
 // #include "ex06/ft_str_is_printable.c"
 // #include "ex07/ft_strupcase.c"
-#include "ex08/ft_strlowcase.c"
+// #include "ex08/ft_strlowcase.c"
+#include "ex09/ft_strcapilatize.c"
 
 #include <stdio.h>
 #include <string.h>
@@ -26,15 +27,16 @@ int main()
     // printf("ex00================\n");
 
     // printf("ex01================\n");
-    // char nome[] = "daniel perdeu o exame e teve um pessimo dia"; // '0'
+    // char nome[] = "daniel lais 42sp";
     // char nome_copia[100];
+    // int n = 10;
 
-    // ft_strcpy(nome_copia, nome);
+    // ft_strncpy(nome_copia, nome, n);
 
     // printf("nome: %s\n", nome);
     // printf("nome_copiado: %s\n", nome_copia);
     // printf("ex01================\n");
-    // printf("\n");
+    // printf("\n");   
 
     // printf("ex02================\n");
     // char *str = "42sp";
@@ -152,6 +154,13 @@ int main()
 
 
     printf("ex09================\n");
+    char nome[] = "esta é uma, uma oque.... string de teste+teeste."; 
+    printf("%s\n", nome);
+
+    ft_strcapilatize(nome);
+
+    printf("%s\n", nome);
+    
     printf("ex09================\n");
     printf("\n");
 
