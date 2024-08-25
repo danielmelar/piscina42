@@ -154,7 +154,7 @@ int main()
 
 
     printf("ex09================\n");
-    char nome[] = "esta é uma, uma oque.... string de teste+teeste."; 
+    char nome[] = "oi, tudo bem? 42palavras quarenta-e-duas; cinquenta+e+um"; 
     printf("%s\n", nome);
 
     ft_strcapilatize(nome);
