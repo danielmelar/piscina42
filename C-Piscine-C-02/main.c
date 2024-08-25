@@ -139,18 +139,21 @@ int main()
     // printf("\n");
 
 
-    printf("ex08================\n");
-    char str1[] = "42sp LKS 0907 VIAGEM AO CENtrO dA tERRA";
-    printf("%s\n", str1);
+    // printf("ex08================\n");
+    // char str1[] = "42sp LKS 0907 VIAGEM AO CENtrO dA tERRA";
+    // printf("%s\n", str1);
 
-    ft_strlowcase(str1);
-    printf("%s\n", str1);
+    // ft_strlowcase(str1);
+    // printf("%s\n", str1);
 
-    printf("ex08================\n");
+    // printf("ex08================\n");
+    // printf("\n");
+
+
+
+    printf("ex09================\n");
+    printf("ex09================\n");
     printf("\n");
-
-
-
 
 
     // printf("ex03================\n");
