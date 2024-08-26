@@ -17,6 +17,7 @@ int	ft_str_is_lowercase(char *str)
 	int	size;
 
 	index = 0;
+	size = 0;
 	while (str[index] != '\0')
 	{
 		size++;

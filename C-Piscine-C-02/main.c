@@ -32,8 +32,8 @@ int main()
     // testa_ex04();
     // testa_ex05();
     // testa_ex06();
-    testa_ex07();
-    // testa_ex08();
+    //testa_ex07();
+    testa_ex08();
     // testa_ex09();
 
     return 0;
@@ -95,21 +95,18 @@ void testa_ex03()
 
     char *str = "42sp";
     int is_alpha;
-
     is_alpha = ft_str_is_numeric(str);
     printf("%d\n", is_alpha);
 
-    char *str2 = "123";
-    int is_alpha2;
+    char *str1 = "42";
+    int is_alpha1;
+    is_alpha1 = ft_str_is_numeric(str1);
+    printf("%d\n", is_alpha1);
 
+    char *str2 = "\t";
+    int is_alpha2;
     is_alpha2 = ft_str_is_numeric(str2);
     printf("%d\n", is_alpha2);
-
-
-    char *str3 = "";
-    int is_alpha3;
-    is_alpha3 = ft_str_is_numeric(str3);
-    printf("%d\n", is_alpha3);
 
     printf("ex03================\n");
     printf("\n");
@@ -181,7 +178,7 @@ void testa_ex07()
 {
     printf("ex07================\n");
 
-    char *str1 = "42sp E UMA ESCOLA MUITO LEGAL, NE?";
+    char *str1 = "42sp Ee uma escola muito lagalxx";
     printf("%s\n", str1);
     str1 = ft_strupcase(str1);
     printf("%s\n", str1);
@@ -194,7 +191,8 @@ void testa_ex08()
 {
     printf("ex08================\n");
     
-    char *str1 = "42sp E UMA ESCOLA MUITO LEGAL, NE?";
+    char *str1 = "42sp";
+
     printf("%s\n", str1);
     str1 = ft_strlowcase(str1);
     printf("%s\n", str1);

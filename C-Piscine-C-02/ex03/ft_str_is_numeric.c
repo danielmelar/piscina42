@@ -17,20 +17,23 @@ int	ft_str_is_numeric(char *str)
 	int	size;
 
 	index = 0;
+	size = 0;
 	while (str[index] != '\0')
 	{
 		size++;
 		index++;
 	}
+
+	index = 0;
 	if (size <= 0)
 		return (1);
 	else
 	{
 		while (str[index] != '\0')
 		{
-			if (str[index] >= 32 && str[index] <= 47)
+			if (str[index] > 0 && str[index] <= 47)
 				return (0);
-			else if (str[index] >= 58 && str[index] <= 126)
+			else if (str[index] >= 58 && str[index] <= 127)
 				return (0);
 			index++;
 		}
