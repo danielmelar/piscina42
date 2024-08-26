@@ -6,7 +6,7 @@
 /*   By: dyuri-de <dyuri-de@student.42sp.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 14:16:35 by dyuri-de          #+#    #+#             */
-/*   Updated: 2024/08/22 14:16:36 by dyuri-de         ###   ########.fr       */
+/*   Updated: 2024/08/26 10:44:33 by dyuri-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -19,7 +19,6 @@ void    ft_putnbr(int nb)
     
     write(1, &nb, 1);
 
-    int temp = nb % 10;
 
     write(1, &nb, 1);
 }
