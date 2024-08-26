@@ -11,15 +11,19 @@
 /* ************************************************************************** */
 int	ft_str_is_uppercase(char *str);
 
-int	ft_strlen(char *str);
-
 int	ft_str_is_uppercase(char *str)
 {
 	int	index;
 	int	size;
 
 	index = 0;
-	size = ft_strlen(str);
+	while (str[index] != '\0')
+	{
+		size++;
+		index++;
+	}
+
+	index = 0;
 	if (size <= 0)
 		return (1);
 	else
@@ -34,16 +38,4 @@ int	ft_str_is_uppercase(char *str)
 		}
 	}
 	return (1);
-}
-
-int	ft_strlen(char *str)
-{
-	int	counter;
-
-	counter = 0;
-	while (str[counter] != '\0')
-	{
-		counter++;
-	}
-	return (counter);
 }

@@ -11,41 +11,33 @@
 /* ************************************************************************** */
 int	ft_str_is_alpha(char *str);
 
-int	ft_strlen(char *str);
-
 int	ft_str_is_alpha(char *str)
 {
 	int	index;
 	int	size;
+	
+	index = 0;
+	while (str[index] != '\0')
+	{
+		size++;
+		index++;
+	}
 
 	index = 0;
-	size = ft_strlen(str);
 	if (size <= 0)
 		return (1);
 	else
 	{
 		while (str[index] != '\0')
 		{
-			if (str[index] >= 32 && str[index] <= 64)
+			if (str[index] <= 64)
 				return (0);
 			else if (str[index] >= 91 && str[index] <= 96)
 				return (0);
-			else if (str[index] >= 123 && str[index] <= 126)
+			else if (str[index] >= 123)
 				return (0);
 			index++;
 		}
 	}
 	return (1);
-}
-
-int	ft_strlen(char *str)
-{
-	int	counter;
-
-	counter = 0;
-	while (str[counter] != '\0')
-	{
-		counter++;
-	}
-	return (counter);
 }
