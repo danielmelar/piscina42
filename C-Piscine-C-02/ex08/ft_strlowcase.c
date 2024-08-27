@@ -18,22 +18,14 @@ char	*ft_strlowcase(char *str)
 	int	index;
 
 	index = 0;
-	printf("passou aqui!0\n");
-	// last char -> '\0'
-	while (*str != '\0')
+	while (str[index] != '\0')
 	{
-		printf("passou aqui!\n");
-		// A = 65, Z = 90
 		if (str[index] >= 'A' && str[index] <= 'Z')
 		{
-		printf("passou aqui!2\n");
 			str[index] += 32;
-
 		}
-		printf("passou aqui!3\n");
-		str++;
 		index++;
 	}
-	printf("passou aqui!4\n");
+	str[index] = '\0';
 	return (str);
 }

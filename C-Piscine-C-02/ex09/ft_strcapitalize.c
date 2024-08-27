@@ -9,7 +9,7 @@
 /*   Updated: 2024/08/25 18:14:46 by dyuri-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-char	*ft_strcapilatize(char *str);
+char	*ft_strcapitalize(char *str);
 
 int	ft_is_alpha(char chr)
 {
@@ -28,7 +28,7 @@ char	ft_chrcapitalize(char chr)
 	return (chr);
 }
 
-char	*ft_strcapilatize(char *str)
+char	*ft_strcapitalize(char *str)
 {
 	int	index;
 	int	is_alpha;

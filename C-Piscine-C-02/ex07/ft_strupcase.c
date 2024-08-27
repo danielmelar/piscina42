@@ -22,6 +22,6 @@ char	*ft_strupcase(char *str)
 		str[index] = str[index] - 32;
 		index++;
 	}
-	str[index] = '\0';
+	str[index+1] = '\0';
 	return (str);
 }

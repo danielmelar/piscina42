@@ -31,9 +31,9 @@ int	ft_str_is_numeric(char *str)
 	{
 		while (str[index] != '\0')
 		{
-			if (str[index] > 0 && str[index] <= 47)
+			if (str[index] <= 47)
 				return (0);
-			else if (str[index] >= 58 && str[index] <= 127)
+			else if (str[index] >= 58)
 				return (0);
 			index++;
 		}
