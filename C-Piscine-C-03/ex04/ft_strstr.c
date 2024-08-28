@@ -23,13 +23,13 @@ char	*ft_strstr(char *str, char *to_find)
 	int len;
 
 	if ((c = *to_find++) != '\0') {
-		len = ft_strlen3(to_find);
+		len = strlen(to_find);
 		do {
 			do {
 				if ((sc = *str++) == '\0')
 					return (0);
 			} while (sc != c);
-		} while (ft_strncmp2(str, to_find, len) != 0);
+		} while (strncmp(str, to_find, len) != 0);
 		str--;
 	}
 	return ((char *)str);

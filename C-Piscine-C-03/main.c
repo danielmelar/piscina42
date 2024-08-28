@@ -15,7 +15,7 @@ void test_ex03();
 int main()
 {
 	char *str = "algo aqui";
-	char *find = "algo";
+	char *find = "go";
 	char *result = ft_strstr(str, find);
 
 	printf("%s\n", result);
