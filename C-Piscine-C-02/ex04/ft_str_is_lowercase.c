@@ -11,21 +11,14 @@
 /* ************************************************************************** */
 int	ft_str_is_lowercase(char *str);
 
+int	ft_strlen3(char *str);
+
 int	ft_str_is_lowercase(char *str)
 {
 	int	index;
-	int	size;
 
 	index = 0;
-	size = 0;
-	while (str[index] != '\0')
-	{
-		size++;
-		index++;
-	}
-
-	index = 0;
-	if (size <= 0)
+	if (ft_strlen3 <= 0)
 		return (1);
 	else
 	{
@@ -39,4 +32,19 @@ int	ft_str_is_lowercase(char *str)
 		}
 	}
 	return (1);
+}
+
+int	ft_strlen3(char *str)
+{
+	int	index;
+	int	size;
+
+	index = 0;
+	size = 0;
+	while (str[index] != '\0')
+	{
+		size++;
+		index++;
+	}
+	return (size);
 }

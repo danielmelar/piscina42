@@ -6,26 +6,19 @@
 /*   By: dyuri-de <dyuri-de@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/23 20:15:30 by dyuri-de          #+#    #+#             */
-/*   Updated: 2024/08/23 20:17:59 by dyuri-de         ###   ########.fr       */
+/*   Updated: 2024/08/27 16:20:39 by dyuri-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 int	ft_str_is_numeric(char *str);
 
+int	ft_strlen2(char *str);
+
 int	ft_str_is_numeric(char *str)
 {
 	int	index;
-	int	size;
 
 	index = 0;
-	size = 0;
-	while (str[index] != '\0')
-	{
-		size++;
-		index++;
-	}
-
-	index = 0;
-	if (size <= 0)
+	if (ft_strlen2(str) <= 0)
 		return (1);
 	else
 	{
@@ -39,4 +32,19 @@ int	ft_str_is_numeric(char *str)
 		}
 	}
 	return (1);
+}
+
+int	ft_strlen2(char *str)
+{
+	int	index;
+	int	size;
+
+	index = 0;
+	size = 0;
+	while (str[index] != '\0')
+	{
+		size++;
+		index++;
+	}
+	return (size);
 }

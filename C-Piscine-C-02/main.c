@@ -26,15 +26,15 @@ void testa_ex09();
 int main()
 {
     // testa_ex00();
-    // testa_ex01();
-    //testa_ex02();
+    //  testa_ex01();
+    // testa_ex02();
     // testa_ex03();
     // testa_ex04();
     // testa_ex05();
     // testa_ex06();
-    //testa_ex07();
-    //testa_ex08();
-    testa_ex09();
+    testa_ex07();
+    // testa_ex08();
+    // testa_ex09();
 
     return 0;
 }
@@ -59,12 +59,12 @@ void testa_ex01()
 {
     printf("ex01================\n");
 
-    char nome[] = "daniel lais 42sp";
-    char nome_copia[100];
-    int n = 10;
-    ft_strncpy(nome_copia, nome, n);
-    printf("nome: %s\n", nome);
-    printf("nome_copiado: %s\n", nome_copia);
+    char frase[] = "vila madalena e topzeira";
+    char frase_copia[100];
+    int n = 5;
+    ft_strncpy(frase_copia, frase, n);
+    printf("nome: %s\n", frase);
+    printf("nome_copiado: %s\n", frase_copia);
 
     printf("ex01================\n");
     printf("\n");
@@ -186,6 +186,7 @@ void testa_ex07()
 {
     printf("ex07================\n");
 
+    
     char str1[] = "42sp Ee uma escola muito lagalxx";
     printf("%s\n", str1);
     ft_strupcase(str1);

@@ -78,7 +78,7 @@ int main()
 	printf("\n");
 	
 	printf("Inicio ex06=============\n");
-	char *strlen = "hoje foi cansativo"; // 18
+	char *strlen = ""; // 18
 	int len = ft_strlen(strlen);
 	printf("%d", len);
 	printf("\n");
@@ -104,7 +104,7 @@ int main()
 	}
 	printf("\n");
 	printf("fim ex07=============\n");
-	printf("\n");
+	printf("\n");return 0 c terminal
 	
 	printf("Inicio ex08=============\n");
 	int int_rev_tab[5] = {1, 4, 3, 9, 7}; // output: 1, 3, 4, 7, 9
@@ -126,5 +126,6 @@ int main()
 	printf("\n");
 	printf("fim ex08=============\n");
 	printf("\n");
-	return 0;
+
+	return (0);
 }
