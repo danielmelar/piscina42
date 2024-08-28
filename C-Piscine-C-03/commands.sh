@@ -1,0 +1,1 @@
+alias run="cc -Wall -Wextra -Werror main.c; ./a.out"

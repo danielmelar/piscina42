@@ -3,35 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dyuri-de <dyuri-de@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: dyuri-de <@student.42sp.org.br>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 20:33:29 by dyuri-de          #+#    #+#             */
-/*   Updated: 2024/08/27 20:33:48 by dyuri-de         ###   ########.fr       */
+/*   Updated: 2024/08/28 11:14:08 by dyuri-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 int ft_strcmp(char *s1, char *s2);
 
 int ft_strcmp(char *s1, char *s2)
 {
-    int index;
     int diference;
-    int s1_size;
-    int s2_size;
 
-    index = 0;
-    s1_size = 0;
-    s2_size = 0;
-    while (s1[s1_size] != '\0')
+    while (*s1 && *s1 == *s2) // "*str" -> forma abreviada de "*str != '\0'"
     {
-        s1_size++;
+       s1++;
+       s2++; 
     }
 
-    while (s2[s2_size] != '\0')
-    {
-        s2_size++;
-    }
-
-    diference =  s2[s2_size] - s1[s1_size];
-
+    diference = *s1 - *s2;
     return (diference);
 }
