@@ -14,11 +14,7 @@ void test_ex03();
 
 int main()
 {
-	char *str = "algo aqui";
-	char *find = "go";
-	char *result = ft_strstr(str, find);
-
-	printf("%s\n", result);
+	test_ex01();
 
 
 	return 0;
@@ -38,11 +34,11 @@ void test_ex00()
 
 void test_ex01()
 {
-	char src[] = ""; 
-	char cmp[] = "";
+	char src[] = "sushi e sashim"; 
+	char cmp[] = "Sushi e sashim";
 
-	int result = strncmp(src, cmp, 1); // limite de bites tamanho de src. 
-	int	result2 = ft_strncmp(src, cmp, 1);
+	int result = strncmp(src, cmp, 0); // limite de bites tamanho de src. 
+	int	result2 = ft_strncmp(src, cmp, 0);
 
 	printf("%d\n", result);
 	printf("%d\n", result2);
