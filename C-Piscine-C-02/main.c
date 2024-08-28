@@ -25,14 +25,14 @@ void testa_ex09();
 
 int main()
 {
-    // testa_ex00();
-    //  testa_ex01();
+    testa_ex00();
+    testa_ex01();
     // testa_ex02();
     // testa_ex03();
     // testa_ex04();
     // testa_ex05();
     // testa_ex06();
-    testa_ex07();
+    //testa_ex07();
     // testa_ex08();
     // testa_ex09();
 
