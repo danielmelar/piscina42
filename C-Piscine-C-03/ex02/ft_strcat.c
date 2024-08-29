@@ -47,15 +47,4 @@ int	ft_strlen(char *str)
 	return (size);
 }
 
-/*
-bom
-b       -> 0
-o       -> 1
-m       -> 2
 
-bom -> 4
-b       -> 0
-o       -> 1
-m       -> 2
-'\0'    -> 3
-*/
