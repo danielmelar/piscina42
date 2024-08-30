@@ -5,37 +5,33 @@ void    ft_putnbr(int nb);
 
 int main()
 {
-    int nb = 42;
+    int nb = 2147483647;
     ft_putnbr(nb);
     
 }
 
 void    ft_putnbr(int nb)
 {
-    // nb += '0';
-    // write(1, &nb, 1);
-    int digit;
-    int *number;
-    int index;
+    int mod_temp;
+    int to_print;
 
-    digit = 0;
-    index = 0;
-    while (nb <= 0)
+    char *numbers;
+
+    while (nb > 9)
     {
-        digit = nb % 10;
-        number[index] = digit;
-        
+        if ((nb % 10) != 0)
+        {
+            mod_temp = nb % 10;
+            to_print = mod_temp + '0';
+            printf("%c", to_print);
+            nb -= mod_temp;
+        }
+        else
+        {
+            nb = nb / 10;
+        }
     }
-}
 
-void	ft_putstr(char *str)
-{
-	int	count;
-
-	count = 0;
-	while (str[count] != '\0')
-	{
-		write(1, &str[count], 1);
-		count++;
-	}
+    nb += '0';
+    printf("%c", nb);
 }
