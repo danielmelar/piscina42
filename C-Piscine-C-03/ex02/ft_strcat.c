@@ -12,24 +12,22 @@
 
 char	*ft_strcat(char *dest, char *src);
 
-int ft_strlen(char *str);
+int		ft_strlen(char *str);
 
 char	*ft_strcat(char *dest, char *src)
 {
-    int len_dest = ft_strlen(dest);
-    unsigned int i;
+	int				len_dest;
+	unsigned int	i;
 
-    i = 0;
-
-    while (src[i] != '\0')
-    {
-        dest[len_dest + i] = src[i];
-        i++;
-    }
-
-    dest[len_dest + i] = '\0';
-
-    return dest;
+	len_dest = ft_strlen(dest);
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dest[len_dest + i] = src[i];
+		i++;
+	}
+	dest[len_dest + i] = '\0';
+	return (dest);
 }
 
 int	ft_strlen(char *str)
@@ -46,5 +44,3 @@ int	ft_strlen(char *str)
 	}
 	return (size);
 }
-
-

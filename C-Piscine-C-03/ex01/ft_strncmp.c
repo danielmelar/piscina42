@@ -10,27 +10,26 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strncmp(char *s1, char *s2, unsigned int n);
+int	ft_strncmp(char *s1, char *s2, unsigned int n);
 
-int ft_strncmp(char *s1, char *s2, unsigned int n)
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-    int diference;
-    unsigned index;
+	int				diference;
+	unsigned int	index;
 
-    index = 0;
-    diference = 0;
-    if (n == index)
-        return (diference);
-    else
-    {
-        while (*s1 && *s1 == *s2 && index <= n)
-        {
-            s1++;
-            s2++;
-            index++; 
-        }
-    }
-
-    diference = (*s1 - *s2);
-    return (diference);
+	index = 0;
+	diference = 0;
+	if (n == index)
+		return (diference);
+	else
+	{
+		while (*s1 && *s1 == *s2 && index < n - 1)
+		{
+			s1++;
+			s2++;
+			index++;
+		}
+	}
+	diference = (*s1 - *s2);
+	return (diference);
 }

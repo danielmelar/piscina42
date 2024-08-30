@@ -10,18 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strcmp(char *s1, char *s2);
+int	ft_strcmp(char *s1, char *s2);
 
-int ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
-    int diference;
+	int	diference;
 
-    while (*s1 && *s1 == *s2) // "*str" -> forma abreviada de "*str != '\0'"
-    {
-       s1++;
-       s2++; 
-    }
-
-    diference = *s1 - *s2;
-    return (diference);
+	while (*s1 && *s1 == *s2)
+	{
+		s1++;
+		s2++;
+	}
+	diference = *s1 - *s2;
+	return (diference);
 }

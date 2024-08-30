@@ -13,7 +13,10 @@ void test_ex03();
 
 int main()
 {
-	test_ex02();
+	// test_ex00();
+	test_ex01();
+	// test_ex02();
+	// test_ex03();
 
 	return 0;
 }
@@ -33,10 +36,10 @@ void test_ex00()
 void test_ex01()
 {
 	char src[] = "texta para comparar"; 
-	char cmp[] = "texto para comparar";
+	char cmp[] = "tex0to para comparar";
 
-	int result = strncmp(src, cmp, 10); // limite de bites tamanho de src. 
-	int	result2 = ft_strncmp(src, cmp, 10);
+	int result = strncmp(src, cmp, 5); // limite de bites tamanho de src. 
+	int	result2 = ft_strncmp(src, cmp, 5);
 
 	printf("%d\n", result);
 	printf("%d\n", result2);
@@ -72,15 +75,15 @@ void test_ex02()
 
 void test_ex03()
 {
-	char dest[] = "bom ";
-	char to_concat[] = "dia";
+	char dest[] = "bom dia com ";
+	char to_concat[] = "aleaaaaa";
 
-	strncat(dest, to_concat, 1);
+	strncat(dest, to_concat, 3);
 	printf("%s\n", dest);
 
-	char dest2[] = "bom ";
-	char to_concat2[] = "dia";
+	char dest2[] = "bom dia com ";
+	char to_concat2[] = "aleaaaaa";
 
-	ft_strncat(dest2, to_concat2, 1);
+	ft_strncat(dest2, to_concat2, 3);
 	printf("%s\n", dest2);
 }
