@@ -1,40 +1,34 @@
+#include "ex00/ft_strlen.c"
+#include "ex01/ft_putstr.c"
+#include "ex02/ft_putnbr.c"
 #include <stdio.h>
 #include <unistd.h>
 
-void    ft_putnbr(int nb);
+void	test_ex00(char *str);
+void	test_ex01(char *str);
+void	test_ex02(int nb);
 
-int main()
+int	main(void)
 {
-    int nb = -425;
-    ft_putnbr(nb);
+	// test_ex00("daniel");
+	// test_ex01("daniel");
+	test_ex02(287498247);
 }
 
-void    ft_putnbr(int nb)
+void	test_ex00(char *str)
 {
-    int mod_temp;
-    int char_number;
+	int	size;
 
-
-    char buffer[12];
-    int index;
-
-    index = 0;
-    if (nb < 0)
-    {
-        write(1, "-", 1);
-        nb *= -1;
-    }
-
-    while (nb > 0)
-    {
-        char_number = (nb % 10) + '0';
-        buffer[index++] = char_number;
-        nb = nb / 10;
-    }
-    
-    while (index > 0)
-    {
-        write(1, &buffer[--index], 1);
-    }
+	size = ft_strlen(str);
+	printf("%i", size);
 }
 
+void	test_ex01(char *str)
+{
+	ft_putstr(str);
+}
+
+void	test_ex02(int nb)
+{
+	ft_putnbr(nb);
+}
