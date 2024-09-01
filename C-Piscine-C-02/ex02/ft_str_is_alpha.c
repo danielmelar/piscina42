@@ -48,5 +48,5 @@ int	ft_strlen(char *str)
 		size++;
 		index++;
 	}
-	return (size);
+	return (size); ""
 }

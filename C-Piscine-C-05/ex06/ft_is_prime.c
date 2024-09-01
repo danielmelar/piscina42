@@ -1,11 +1,23 @@
-int ft_is_prime(int nb);
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_is_prime.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dyuri-de <dyuri-de@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/01 16:53:07 by dyuri-de          #+#    #+#             */
+/*   Updated: 2024/09/01 16:53:28 by dyuri-de         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int ft_is_prime(int nb)
+int	ft_is_prime(int nb);
+
+int	ft_is_prime(int nb)
 {
-    if (nb == 0 || nb == 1)
-        return (0);
-    if (!(nb / 1 == nb) && !(nb / nb == 1))
-        return (0);
-    else
-        return (1);   
+	if (nb == 0 || nb == 1)
+		return (0);
+	if (!(nb / 1 == nb) && !(nb / nb == 1))
+		return (0);
+	else
+		return (1);
 }

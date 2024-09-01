@@ -12,7 +12,7 @@ int	main(void)
 {
 	// test_ex00("daniel");
 	// test_ex01("daniel");
-	test_ex02(287498247);
+	test_ex02(-2147483648); // arrumar ft_putnbr para printar essa numero
 }
 
 void	test_ex00(char *str)
