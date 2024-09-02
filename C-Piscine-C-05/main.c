@@ -5,6 +5,7 @@
 #include "ex04/ft_fibonacci.c"
 #include "ex05/ft_sqrt.c"
 #include "ex06/ft_is_prime.c"
+#include "ex07/ft_find_next_prime.c"
 #include <stdio.h>
 
 void	test_ex00(int nb);
@@ -14,12 +15,13 @@ void	test_ex03(int nb, int power);
 void	test_ex04(int index);
 void	test_ex05(int nb);
 void	test_ex06(int nb);
+void	test_ex07(int nb);
 
 int		ft_sqrt(int n);
 
 int	main(void)
 {
-	test_ex06(3);
+	test_ex07(947);
 }
 
 void	test_ex00(int nb)
@@ -55,4 +57,9 @@ void	test_ex05(int nb)
 void	test_ex06(int nb)
 {
 	printf("%d\n", ft_is_prime(nb));
+}
+
+void	test_ex07(int nb)
+{
+	printf("%d\n", ft_find_next_prime(nb));
 }

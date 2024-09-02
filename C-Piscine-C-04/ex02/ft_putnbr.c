@@ -14,23 +14,18 @@
 
 void	ft_putnbr(int nb);
 
+int		valid_nb(int nb);
+
 void	ft_putnbr(int nb)
 {
 	int		char_number;
 	char	numbers[12];
 	int		index;
 
+	nb = valid_nb(nb);
 	if (nb == 0)
-	{
-		write(1, "0", 1);
 		return ;
-	}
 	index = 0;
-	if (nb < 0)
-	{
-		write(1, "-", 1);
-		nb *= -1;
-	}
 	while (nb > 0)
 	{
 		char_number = (nb % 10) + '0';
@@ -41,4 +36,24 @@ void	ft_putnbr(int nb)
 	{
 		write(1, &numbers[--index], 1);
 	}
+}
+
+int	valid_nb(int nb)
+{
+	if (nb == -2147483648)
+	{
+		write(1, "-2147483648", 11);
+		return (0);
+	}
+	if (nb == 0)
+	{
+		write(1, "0", 1);
+		return (0);
+	}
+	if (nb < 0)
+	{
+		write(1, "-", 1);
+		nb *= -1;
+	}
+	return (nb);
 }
