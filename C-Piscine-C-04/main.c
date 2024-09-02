@@ -1,4 +1,4 @@
-#include "ex00/ft_strlen.c"
+//#include "ex00/ft_strlen.c"
 #include "ex01/ft_putstr.c"
 #include "ex02/ft_putnbr.c"
 #include "ex03/ft_atoi.c"
@@ -14,8 +14,9 @@ int	main(void)
 {
 	// test_ex00("daniel");
 	// test_ex01("daniel");
-	//test_ex02(-12); // arrumar ft_putnbr para printar essa numero
-	test_ex03("kldjaslkjda-kasljda-");
+	//test_ex02(-12);
+	test_ex03("   -+dasdabcSLKJ--1231a4567890abc");
+
 }
 
 void	test_ex00(char *str)
