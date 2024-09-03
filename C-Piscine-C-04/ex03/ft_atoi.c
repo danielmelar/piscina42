@@ -31,6 +31,8 @@ int	ft_atoi(char *str)
 	int		index_numbers;
 
 	odd_even = ft_check_odd_even(str);
+	if (odd_even == 2)
+		return (0);
 	*numbers = *ft_extract_number(str, numbers);
 	size = ft_strlen(numbers);
 	number = 0;
@@ -55,7 +57,11 @@ int	ft_check_odd_even(char *str)
 	{
 		if (*str == '-')
 			if (*str++ == '+' || *str++ >= '0' || *str++ <= '9')
+			{
+				if (*str++ != '-' || *str++ != '+' || *str++ != '0' || *str++ != '9')
+					return (2);
 				odd_even++;
+			}
 		str++;
 	}
 	if (odd_even % 2 == 0)

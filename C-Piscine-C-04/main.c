@@ -15,7 +15,7 @@ int	main(void)
 	// test_ex00("daniel");
 	// test_ex01("daniel");
 	//test_ex02(-12);
-	test_ex03("   -+dasdabcSLKJ--1231a4567890abc");
+	test_ex03("1212dasdabcSLKJ1231a4567890abc");
 
 }
 

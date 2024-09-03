@@ -21,7 +21,7 @@ int		ft_sqrt(int n);
 
 int	main(void)
 {
-	test_ex07(947);
+	test_ex00(12);
 }
 
 void	test_ex00(int nb)
