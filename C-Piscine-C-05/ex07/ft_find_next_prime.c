@@ -12,23 +12,25 @@
 
 int	ft_find_next_prime(int nb);
 
-int	is_prime(int nb);
+int	check_prime(int nb);
 
 int	ft_find_next_prime(int nb)
 {
 	int	is_prime;
 
-	is_prime = 0;
+	is_prime = check_prime(nb);
 	while (is_prime != 1)
 	{
-		is_prime = ft_is_prime(nb + 1);
+		is_prime = check_prime(nb + 1);
 		nb += 1;
 	}
 	return (nb);
 }
 
-int	is_prime(int nb)
+int	check_prime(int nb)
 {
+	if (nb < 0)
+		return (0);
 	if (nb == 0 || nb == 1)
 		return (0);
 	if (nb == 2 || nb == 3)

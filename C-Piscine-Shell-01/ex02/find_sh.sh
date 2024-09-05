@@ -1,1 +1,1 @@
-find . -name "*.sh" -exec  basename {} .sh \;
+find . | wc -l | cat -e

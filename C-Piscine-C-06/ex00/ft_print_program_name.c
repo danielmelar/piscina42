@@ -16,6 +16,7 @@ void	ft_putstr(char *str);
 
 int	main(int argc, char **argv)
 {
+	argc = 1;
 	ft_putstr(argv[argc - 1]);
 }
 
