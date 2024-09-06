@@ -14,17 +14,17 @@
 
 void	ft_putstr(char *str);
 
-int    main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
-    int index;
+	int	index;
 
-    index = 1;
-    while (index < argc)
-    {
-        ft_putstr(argv[index]);
-        write(1, "\n", 1);
-        index++;
-    }
+	index = 1;
+	while (index < argc)
+	{
+		ft_putstr(argv[index]);
+		write(1, "\n", 1);
+		index++;
+	}
 }
 
 void	ft_putstr(char *str)
